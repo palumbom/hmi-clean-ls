@@ -121,13 +121,12 @@ def inv_SVD(A, svdlim):
 
 class HmiClass():
     """Class to handle mi maps and their coordinates"""
-    # {{{ def __init__(self, hmi_data_dir, hmi_file, day):
-    def __init__(self, hmi_data_dir, hmi_file, day):
+    # {{{ def __init__(self, hmi_file):
+    def __init__(self, hmi_file):
         print(f"Loading {hmi_file}")
-        self.day = day
         self.rsun_rel = 200
 
-        self.fname = hmi_data_dir + hmi_file
+        self.fname = hmi_file
         hmi_map = spMap(self.fname)
         self.rsun_meters = hmi_map.rsun_meters
         self.B0 = hmi_map.observer_coordinate.lat
