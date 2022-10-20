@@ -18,7 +18,7 @@ __all__ = ["get_pleg_index",
            "gen_leg_x",
            "inv_SVD",
            "HmiClass"]
-__author__ "Samarth G Kashyap"
+__author__ = "Samarth G Kashyap"
 
 # {{{ def get_pleg_index(l, m):
 def get_pleg_index(l, m):
